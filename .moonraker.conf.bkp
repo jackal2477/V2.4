@@ -19,6 +19,7 @@ cors_domains =
 	*://localhost:*
 	*://my.mainsail.xyz
 	*://app.fluidd.xyz
+	*:7136
 
 [octoprint_compat]
 
@@ -56,4 +57,11 @@ path = ~/mainsail
 
 [file_manager]
 enable_object_processing = True
+
+[update_manager pgcode]
+type = git_repo
+primary_branch = main
+origin = https://github.com/Kragrathea/pgcode.git
+path = ~/pgcode
+is_system_service = False
 
